@@ -55,4 +55,22 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // UI
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+    implementation("com.squareup.retrofit2:converter-scalars:3.0.0")
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+
+    // Google Maps
+    implementation("com.google.android.gms:play-services-maps:19.2.0")
+
+    // Firebase
+    implementation(platform("com.google.firebase:firebase-bom:34.7.0"))
+    implementation("com.google.firebase:firebase-messaging:25.0.1")
+
+    // LocalBroadcastManager
+    implementation("androidx.localbroadcastmanager:localbroadcastmanager:1.1.0")
 }

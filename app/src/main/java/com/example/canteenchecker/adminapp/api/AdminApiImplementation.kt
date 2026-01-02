@@ -4,10 +4,20 @@ import com.example.canteenchecker.adminapp.core.AdminApi
 import com.example.canteenchecker.adminapp.core.CanteenReviewStatistics
 import com.example.canteenchecker.adminapp.core.OwnedCanteenDetails
 import com.example.canteenchecker.adminapp.core.ReviewData
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
 
 class AdminApiImplementation(apiBasUrl: String): AdminApi {
 
-    override suspend fun login(userName: String, pass: String): String {
+    private val retrofit = Retrofit
+        .Builder()
+        .baseUrl(apiBasUrl)
+        .addConverterFactory(ScalarsConverterFactory.create())
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+
+    override suspend fun login(userName: String, password: String): String {
         TODO("Not yet implemented")
     }
 
