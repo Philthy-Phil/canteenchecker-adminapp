@@ -1,0 +1,64 @@
+# Android / Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local config (keine lokalen Pfade)
+local.properties
+*.keystore
+keystore.jks
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+out/
+
+# Native build
+.cxx/
+.externalNativeBuild/
+
+# Generated files
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Log / debug
+*.log
+*.hprof
+captures/
+
+# Firebase / google services
+google-services.json
+firebase-debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+.gradle/
+buildSrc/.gradle/
+buildSrc/build/
+
+# Optional: exclude secrets/config files
+/secrets.properties
+.env
+
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
