@@ -2,7 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+         IMPORTANT!
+         We set android:name to our custom class ".AdminApplication"
+         so that Android initializes our global state (token storage) instead of the default empty Application.
+         Without this, casting 'application' to 'AdminApplication' will crash the app!
+    -->
     <application
+        android:name=".AdminApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
